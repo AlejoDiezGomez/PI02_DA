@@ -30,6 +30,9 @@ Definimos a la tasa de homicidios en siniestros viales como el número de vícti
 Definimos a la cantidad de accidentes mortales de motociclistas en siniestros viales como el número absoluto de accidentes fatales en los que estuvieron involucradas víctimas que viajaban en moto en un determinado periodo temporal. Su fórmula para medir la evolución de los accidentes mortales con víctimas en moto es: (Número de accidentes mortales con víctimas en moto en el año anterior - Número de accidentes mortales con víctimas en moto en el año actual) / (Número de accidentes mortales con víctimas en moto en el año anterior) * 100
 5. La quinta pagina es el KPIs 3 : 
 * Reducir en un 25% la cantidad de victimas menores de 25 años en CABA , respecto al año anterior. Su fórmula para medir la evolución de los accidentes mortales con víctimas menores a 25 años es: (Número de accidentes mortales con víctimas <= 25 años del año anterior - poblacion total ) / (poblacion total ) * 100 
+#### Aclaracion : 
+* Los datos de Poblacion total y poblacion total <= 25 años fueron extraidos de manera manual de [](indec.gob.ar)
+* Poblacion total <= 25 años se obtiene al calcular el 37.97%(porcentaje de habitantes <= 25 años en Argentina ) de la poblacion total de CABA.
 ### 2.1 Estetica del Dash Board : 
 Para este paso se consulto el libro de marca de la Ciudad de Buenos Aires y se respeto su gama de colores y tipografias. 
 ## Contacto : 
