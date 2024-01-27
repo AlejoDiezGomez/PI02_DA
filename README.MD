@@ -2,24 +2,32 @@
 # SINIESTROS VIALES EN CIUDAD DE BUENOS AIRES
 ![](foto_portada.jpg) 
 ## Introduccion : 
-Este proyecto consiste en asumir el rol de un Data Science y Data Analyst y en base a la base de datos del gobierno de la Ciudad de Buenos Aires realizar un analisis de los siniestros viales para poder entregar informacion que permita a las autoridades locales tomar medidas para reducir la cantidad de victimas fatales. Para eso vamos a utilizar los archivos disponibles en su pagina oficial y realizarles un proceso de EDA , ETL y finalmente la creacion de un dash board en power bi. 
+Este proyecto consiste en asumir el rol de un Data Science y Data Analyst y en base a la base de datos del gobierno de la Ciudad de Buenos Aires realizar un analisis de los siniestros viales para poder entregar informacion que permita a las autoridades locales tomar medidas para reducir la cantidad de victimas fatales. Para eso vamos a utilizar los archivos disponibles en su pagina oficial y realizarles un proceso de EDA , ETL y finalmente la creacion de una base de datos MySql para la creacion de un dash board en power bi. 
 ## Tecnologias utilizadas 
+- SQLAlchemy
+- Sql 
+- MySql
 - Python 
 - Pandas 
 - Numpy 
 - Seaborn 
 - Matplotlib 
 - Power bi 
+- BeautifulSoup
 ## Archivo necesario para ejecutar el dash boar en Power Bi
 1.  [Archivo .pbix(Power Bi)](pi02.pbix)
-2.  [Data Set final ](merged_clean.csv)
+2.  [Data Set final ](DataFrameFinal.csv)
 ## Resolucion: 
-### 1. [EDA](EDA.ipynb): 
+### 1. [Web Scraping](ETL.ipynb):
+Obtenemos los datos para la creacion de la base de datos y por el ultimo del dash board a traves de un proceso de web scraping que esta comentado y detallado al inicio del archivo ETL.
+### 2. [EDA](EDA.ipynb): 
 Realice el proceso EDA  (Exploratory Data Analysis) en el DataSet  con el objetivo de identificar relaciones , insights , tendencias y/o patrones , tal que , sirvan para el proceso de ETL y la creacion del Data Set final. Todo el proceso esta comentado y registrado en el archivo EDA.ipynb.
-### 1.1. [ETL](ETL.ipynb): 
+### 2.1. [ETL](ETL.ipynb): 
 En este paso se realizo el proceso de ETL para la obtencion del Data Set final y Data Sets especiales para le proceso EDA. Todo el proceso esta debidamente comentado en el archivo ETL.ipynb. 
-### 2. [Creacion del Dash Board](pi02.pbix):
-Para este paso se utilizo el Data set final llamado merged_clean.csv. Se crearon 5 Paginas dentro de la presentacion de Power Bi con el siguiente objetivo: 
+### 3.[Base de Datos -MySql](SQL.ipynb):
+Creamos una base de datos con MySQL a traves de python donde ingresamos la tabla obtenida de los paso anteriores para asi conectarla a Power Bi.
+### 4. [Creacion del Dash Board](pi02.pbix):
+Para este paso se utilizo el Data set final llamado DataFrameFinal.csv Se crearon 5 Paginas dentro de la presentacion de Power Bi con el siguiente objetivo: 
 1. Es un menu para navegar entre las otras  paginas. 
 2. Es el Dash Board principal donde se pueden realizar todo tipo de consultas al Data Set y configurar con los filtros creados. 
 3. La tercera pagina es el KPIs 1 : 
@@ -33,7 +41,7 @@ Definimos a la cantidad de accidentes mortales de motociclistas en siniestros vi
 #### Aclaracion : 
 * Los datos de Poblacion total y poblacion total <= 25 años fueron extraidos de manera manual de [](indec.gob.ar)
 * Poblacion total <= 25 años se obtiene al calcular el 37.97%(porcentaje de habitantes <= 25 años en Argentina ) de la poblacion total de CABA.
-### 2.1 Estetica del Dash Board : 
+### 4.1 Estetica del Dash Board : 
 Para este paso se consulto el libro de marca de la Ciudad de Buenos Aires y se respeto su gama de colores y tipografias. 
 ## Contacto : 
 - [Portafolio Web](https://alejodiezgomez.github.io/)
