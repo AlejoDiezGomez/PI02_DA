@@ -46,7 +46,7 @@ Para este paso se consulto el libro de marca de la Ciudad de Buenos Aires y se r
 ## Contacto : 
 - [Portafolio Web](https://alejodiezgomez.github.io/)
 - [Linkedin](https://www.linkedin.com/in/alejo-gabriel-diez-gomez-402b93254/)
-- [alejo10gomezz@gmail.com]()
+- [alejodiezgomez@gmail.com]()
 
 
 
